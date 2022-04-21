@@ -5,10 +5,22 @@ parameters {
 choice(name:'CHOOSE',choices:['First','Second','Third'])
 }
 stages {
-stage('Build') {
+stage('First') {
 steps{
 echo "choose as per given ${CHOICE}"
 echo "Hii"
+}
+}
+stage('Second') {
+steps{
+echo "choose as per given ${CHOICE}"
+echo "Hello"
+}
+}
+stage('Third') {
+steps{
+echo "choose as per given ${CHOICE}"
+echo "How Are You"
 }
 }
 }
