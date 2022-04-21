@@ -22,7 +22,7 @@ echo "Ok for 2nd stage!!"
 echo "job Name is ${JOB_NAME}"
 echo "Node name is ${NODE_NAME}"
 echo "workspace is ${WORKSPACE}"
-echo "JAVA home ${JAVA_HOME}"
+/*echo "JAVA home ${JAVA_HOME}"*/
 }
 }
 stage('Deploy') {
