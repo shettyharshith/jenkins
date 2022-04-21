@@ -1,0 +1,14 @@
+pipeline {
+  agent any
+  
+  parameters {
+    string(name: 'STATEMENT', defaultValue: 'hello;', description: 'Try to add parameter')
+  }
+  stages {
+    stage('First') {
+      steps {
+       echo ("${STATEMENT}")
+      }
+    }
+  }
+}
