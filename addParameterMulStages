@@ -29,7 +29,7 @@ stage('Deploy') {
 steps {
 echo "Third stage using param ${params.JENKINS}"
 echo "user name is ${USER_NAME}"
-echo "User id is ${USER_ID} (type: ${USER_ID}.class)"
+echo "User id is ${USER_ID} (type: ${USER_ID.class})"
 echo "Ok for 3rd stage!!"
 echo "build id is ${BUILD_ID}"
 echo "build number is ${BUILD_NUMBER}"
