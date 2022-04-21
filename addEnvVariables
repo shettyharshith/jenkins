@@ -12,6 +12,7 @@ steps {
 echo "build name is ${BUILD_NAME}"
 }
 }
+}
 stage('Test') {
 steps {
 echo "jenkin url is ${JENKINS_URL}"
