@@ -6,6 +6,7 @@ BUILD_NAME = 'NEW_BUILD'
 JENKINS_URL = '/name/id/jenkins'
 }
 stages {
+parallel {
 stage('Build') {
 steps {
 echo "build name is ${BUILD_NAME}"
@@ -14,6 +15,7 @@ echo "build name is ${BUILD_NAME}"
 stage('Test') {
 steps {
 echo "jenkin url is ${JENKINS_URL}"
+}
 }
 }
 }
