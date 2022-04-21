@@ -1,0 +1,30 @@
+pipeline {
+agent any
+
+parameter {
+string(name: 'JENKINS' defaultValue: 'Execution' description: 'Stagewise execution is done')
+}
+environment {
+USER_NAME = 'Harshith'
+USER_ID =43
+}
+stages {
+stage('Build') {
+steps {
+echo "first stage using param ${param.JENKINS}"
+}
+}
+stage('Test') {
+steps {
+echo "Second stage using param ${param.JENKINS}"
+}
+}
+stage('Deploy') {
+steps {
+echo "Second stage using param ${param.JENKINS}"
+echo "user name is ${USER_NAME}"
+echo "User id is ${USER_ID} (type: ${USER_ID}.class)"
+}
+}
+}
+}
