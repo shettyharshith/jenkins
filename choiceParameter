@@ -1,0 +1,13 @@
+pipeline {
+agent any 
+
+parameters {
+choice(name:'CHOOSE',choices:['First','Second','Third'])
+}
+stages {
+stage('Build') {
+steps{
+echo "choose as per given ${CHOOSE}"
+}
+}
+}
