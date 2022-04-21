@@ -2,24 +2,24 @@ pipeline {
 agent any 
 
 parameters {
-choice(name:'CHOOSE',choices:['First','Second','Third'])
+choice(name:'CHOICE',choices:['First','Second','Third'])
 }
 stages {
 stage('First') {
 steps{
-echo "choose as per given ${Choice}"
+echo "choose as per given ${CHOICE}"
 echo "Hii"
 }
 }
 stage('Second') {
 steps{
-echo "choose as per given ${Choice}"
+echo "choose as per given ${CHOICE}"
 echo "Hello"
 }
 }
 stage('Third') {
 steps{
-echo "choose as per given ${Choice}"
+echo "choose as per given ${CHOICE}"
 echo "How Are You"
 }
 }
