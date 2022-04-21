@@ -16,7 +16,7 @@ echo "Ok for 1st stage!!"
 }
 stage('Test') {
 steps {
-echo "Second stage using param ${param.JENKINS}"
+echo "user name is ${USER_NAME}"
 echo "Ok for 2nd stage!!"
 }
 }
