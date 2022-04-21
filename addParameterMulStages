@@ -19,6 +19,7 @@ stage('Test') {
 steps {
 echo "user name is ${USER_NAME}"
 echo "Ok for 2nd stage!!"
+echo "job Name is ${JOB_NAME}"
 }
 }
 stage('Deploy') {
@@ -28,6 +29,8 @@ echo "user name is ${USER_NAME}"
 echo "User id is ${USER_ID} (type: ${USER_ID}.class)"
 echo "Ok for 3rd stage!!"
 echo "build id is ${BUILD_ID}"
+echo "build number is ${BUILD_NUMBER}"
+echo "build url is ${BUILD_URL}"
 }
 }
 }
