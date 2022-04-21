@@ -8,6 +8,7 @@ stages {
 stage('Build') {
 steps{
 echo "choose as per given ${CHOICE}"
+echo "Hii"
 }
 }
 }
