@@ -7,7 +7,7 @@ choice(name:'CHOOSE',choices:['First','Second','Third'])
 stages {
 stage('Build') {
 steps{
-echo "choose as per given ${CHOOSE}"
+echo "choose as per given ${CHOICE}"
 }
 }
 }
