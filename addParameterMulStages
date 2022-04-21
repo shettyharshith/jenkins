@@ -11,12 +11,14 @@ USER_ID =43
 stages {
 stage('Build') {
 steps {
-echo "first stage using param ${param.JENKINS}"
+echo "first stage using  ${param.JENKINS}"
+echo "Ok for 1st stage!!"
 }
 }
 stage('Test') {
 steps {
 echo "Second stage using param ${param.JENKINS}"
+echo "Ok for 2nd stage!!"
 }
 }
 stage('Deploy') {
@@ -24,6 +26,7 @@ steps {
 echo "Second stage using param ${param.JENKINS}"
 echo "user name is ${USER_NAME}"
 echo "User id is ${USER_ID} (type: ${USER_ID}.class)"
+echo "Ok for 3rd stage!!"
 }
 }
 }
