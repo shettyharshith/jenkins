@@ -1,7 +1,7 @@
 pipeline {
 agent any
 
-parameter {
+parameters {
 string(name: 'JENKINS' defaultValue: 'Execution' description: 'Stagewise execution is done')
 }
 environment {
