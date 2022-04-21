@@ -7,19 +7,19 @@ choice(name:'CHOOSE',choices:['First','Second','Third'])
 stages {
 stage('First') {
 steps{
-echo "choose as per given ${CHOICE}"
+echo "choose as per given ${Choice}"
 echo "Hii"
 }
 }
 stage('Second') {
 steps{
-echo "choose as per given ${CHOICE}"
+echo "choose as per given ${Choice}"
 echo "Hello"
 }
 }
 stage('Third') {
 steps{
-echo "choose as per given ${CHOICE}"
+echo "choose as per given ${Choice}"
 echo "How Are You"
 }
 }
