@@ -20,4 +20,3 @@ echo "jenkin url is ${JENKINS_URL}"
 }
 }
 }
-}
