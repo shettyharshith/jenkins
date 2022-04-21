@@ -2,7 +2,7 @@ pipeline {
 agent any
 
 parameters {
-string(name: 'JENKINS' defaultValue: 'Execution' description: 'Stagewise execution is done')
+string(name: 'JENKINS', defaultValue: 'Execution', description: 'Stagewise execution is done')
 }
 environment {
 USER_NAME = 'Harshith'
