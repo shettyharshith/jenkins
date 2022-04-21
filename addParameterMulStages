@@ -11,6 +11,7 @@ USER_ID =43
 stages {
 stage('Build') {
 steps {
+echo "First stage using param ${params.JENKINS}"
 echo "Ok for 1st stage!!"
 }
 }
